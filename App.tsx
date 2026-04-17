@@ -6,6 +6,7 @@ import Founder from './components/Founder';
 import LeadForm from './components/LeadForm';
 import Footer from './components/Footer';
 import Partners from './components/Partners';
+import WhatsAppPopup from './components/WhatsAppPopup';
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <LeadForm />
       </main>
       <Footer />
+      <WhatsAppPopup />
     </div>
   );
 };
