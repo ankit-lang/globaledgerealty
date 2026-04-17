@@ -12,7 +12,7 @@ const WhatsAppPopup: React.FC = () => {
       if (!visible) return null;
 
       return (
-            <div className="fixed inset-0 z-50 flex items-end justify-center p-6 pointer-events-none sm:items-center sm:p-8">
+            <div className="fixed inset-0 z-50 flex items-center justify-center p-6 pointer-events-none sm:items-center sm:p-8">
                   <div className="pointer-events-auto w-full max-w-md rounded-[28px] border border-white/15 bg-[#020202]/90 p-6 shadow-[0_35px_80px_rgba(0,0,0,0.5)] backdrop-blur-xl ring-1 ring-white/10 animate-fade-in">
                         <div className="flex items-start justify-between gap-4">
                               <div>
@@ -47,7 +47,7 @@ const WhatsAppPopup: React.FC = () => {
                                                 <MessageSquare size={20} />
                                           </span>
                                           <div>
-                                                <p className="text-xs uppercase tracking-[0.25em] text-emerald-200/80">Chat now</p>
+                                                <p className="text-xs uppercase tracking-[0.25em] text-emerald-200/80">Contact now</p>
                                                 <p className="text-base font-medium">+91 98116 69862</p>
                                           </div>
                                     </div>
