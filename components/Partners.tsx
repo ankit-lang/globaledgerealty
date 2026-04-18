@@ -1,15 +1,15 @@
 import React from 'react';
 
 const partners = [
-  { name: 'Emaar', logo: '/Godrej_Logo.png' },
-  { name: 'DLF', logo: 'https://upload.wikimedia.org/wikipedia/commons/d/df/DLF_logo.svg' },
-  { name: 'Damac', logo: 'https://upload.wikimedia.org/wikipedia/commons/0/07/Damac_Properties_Logo.jpg' },
-  { name: 'Sobha', logo: 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Sobha_Limited_Logo.png' },
-  { name: 'Nakheel', logo: 'https://upload.wikimedia.org/wikipedia/commons/e/e2/Nakheel_Logo.svg' },
-  { name: 'Godrej', logo: 'https://upload.wikimedia.org/wikipedia/commons/6/62/Godrej_Group_Logo.svg' },
-  { name: 'Danube', logo: 'https://upload.wikimedia.org/wikipedia/commons/3/36/Danube_Group_logo.png' },
-  { name: 'Meraas', logo: 'https://upload.wikimedia.org/wikipedia/commons/5/59/Meraas_logo.jpg' },
-  { name: 'Prestige', logo: 'https://upload.wikimedia.org/wikipedia/en/8/83/Prestige_Group_Logo.jpg' },
+  { name: 'Godrej ', logo: '/Godrej_Logo.png' },
+  { name: 'DLF', logo: '8.jpg' },
+  { name: 'Damac', logo: '6.jpg' },
+  { name: 'Sobha', logo: '7.jpg' },
+  { name: 'Nakheel', logo: '4.jpg' },
+
+  { name: 'Danube', logo: '2.jpg' },
+  { name: 'Meraas', logo: '1.jpg' },
+  { name: 'Prestige', logo: '5.jpg' },
 ];
 
 const Partners: React.FC = () => {
@@ -42,11 +42,11 @@ const Partners: React.FC = () => {
         <div className="flex w-max partner-marquee">
           {/* Double the list for infinite seamless scrolling */}
           {[...partners, ...partners].map((partner, index) => (
-            <div key={`${partner.name}-${index}`} className="flex items-center justify-center mx-8 md:mx-12 min-w-[120px] md:min-w-[160px] group opacity-60 hover:opacity-100 transition-opacity duration-300">
+            <div key={`${partner.name}-${index}`} className="flex items-center justify-center mx-8 md:mx-12 min-w-[120px] md:min-w-[160px] group opacity-100 ">
               <img 
                 src={partner.logo} 
                 alt={`${partner.name} Logo`} 
-                className="h-12 md:h-16 w-auto object-contain transition-all duration-300 filter brightness-0 invert group-hover:invert-0 group-hover:brightness-100 group-hover:sepia group-hover:hue-rotate-5 group-hover:saturate-200"
+                className="h-12 md:h-16 w-auto object-contain transition-all duration-300   invert  brightness-100 sepia  "
                 // The filter logic: 
                 // brightness-0 invert -> Makes the image White (for black bgs)
                 // On Hover: Remove filters or apply specific gold tinting if possible, 
